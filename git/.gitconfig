@@ -1,0 +1,47 @@
+[credential]
+	helper = osxkeychain
+[url "https://github.com/"]
+	insteadOf = ssh://git@github.com/
+[user]
+	name = Sam Lin
+	email = sam.lin@convoy.com
+[alias]
+  co = checkout
+	st = status
+	br = branch
+  brv = branch -vv
+	last = log -1 HEAD
+  cm = !git commit -m
+  sl = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --graph --abbrev-commit
+  mysl = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --graph --abbrev-commit --author='Samlinxia|Sam Lin|Coderlin'
+  ca = !git add -A && git commit -m
+  amend = git commit --amend --no-edit
+  ph = push origin $(git rev-parse --abbrev-ref HEAD)
+  pl = fetch --all && git rebase origin/master
+  nb = checkout -b
+  df = diff
+  diffc = diff --cached
+  done = "!f() { \
+    cur_br=$(git rev-parse --abbrev-ref HEAD); \
+    if [ ${cur_br} == 'master' ]; then echo 'Git done cannot on master'; exit(0); fi \
+    git checkout master; \
+    git branch -D ${cur_br}; # remove local branch \
+    git push origin --delete ${cur_br}; # remove remote branch \
+    git pull origin master; \
+    git fetch -p; # After fetch, remove all non-exist remote tracking branches \
+    # git reset --hard origin/master; \
+    git checkout -b ${1}; # checkout to a new branch \
+    git branch set-upstream-to=origin/${1} ${1}; \
+  }; f"
+  cos = "!f(){ git checkout \"$1\" && git status; };f"
+  sortdiff = !sh -c 'git diff "$@" | grep "^[+-]" | sort --key=1.2 | uniq -u -s1'
+  newcm = !sh -c 'git log $1@{1}..$1@{0} "$@"'
+  ad = add -p
+
+[core]
+	excludesfile = /Users/samlin/.gitignore_global
+[grep]
+	extendedRegexp = true
+[push]
+	default = current
+
