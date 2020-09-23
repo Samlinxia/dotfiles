@@ -41,6 +41,8 @@ set cmdheight=1  " command bar height
 "==============typing & text setting============================
 "set wrap  " turn on line wrapping
 set nowrap
+set wrap!
+set formatoptions-=t
 set wrapmargin=0
 set linebreak
 set showbreak=...  " show ellipsis at breaking
@@ -58,6 +60,8 @@ autocmd BufReadPost *
      \ endif
 " Remember info about open buffers on close
 set viminfo^=%
+" Set the working directory to wherever the open file lives
+" set autochdir
 
 "===================File Type Specific=========================
 if has('autocmd') && !exists('autocommands_loaded')
@@ -116,8 +120,13 @@ noremap <C-h> <C-w>h
 noremap <C-l> <C-w>l
 " cycle through buffers. <C-j>, <C-k> mapping defined in vim-tmux-navigator
 " plugin
-" nnoremap <C-j> :bnext<cr>
-" nnoremap <C-k> :bprevious<cr>
+" nmap <C-j> :bnext<cr>
+" nmap <C-k> :bprevious<cr>
+" nmap <leader>l :bnext<cr>
+" nmap <leader>h :bprevious<cr>
+nnoremap <Tab> :bnext<cr>
+nnoremap <S-Tab> :bprevious<cr>
+
 " skip to next blank line.
 noremap J }
 noremap K {
@@ -125,8 +134,6 @@ noremap K {
 " need tab any more.  Remap all tab keys to buffer. 
 " Buffer Switch 
 nmap <leader>. <c-^>
-nmap <leader>l :bnext<cr>
-nmap <leader>h :bprevious<cr>
 " Close the current buffer and move to the previous one
 " This replicates the idea of closing a tab
 nmap <leader>bq :bp <BAR> bd #<CR>
@@ -161,6 +168,10 @@ abbr tempalte template
 " airline options
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts=1
+let g:airline_theme='dark'
+
+" Set tags for vim-fugitive
+set tags^=.git/tags
 
 " Nerd tree
 noremap <C-z> :NERDTreeToggle<CR>

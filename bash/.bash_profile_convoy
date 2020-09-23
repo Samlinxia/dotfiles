@@ -3,10 +3,6 @@ if [ -f ~/.bashrc ]; then
 fi
 # User specific environment and startup programs
 
-export PATH=$HOME/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/share/npm/bin:/usr/local/opt/ruby/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:/Users/samlin/ops/.tools:$M2_HOME/bin:/usr/local/go/bin/:/usr/local/opt/openssl@1.1/bin:$PATH
-
-shopt -s checkwinsize
-
 unset USERNAME
 
 # Lets you cd to these directories from any directory
@@ -24,13 +20,23 @@ export M2_HOME=/Users/samlin/apache-maven-3.6.1
 
 export GOPATH=$HOME/go
 
+# Node.js env
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export CONSUL_RPC_ADDR='172.17.0.1:8400'
+export CONSUL_HTTP_ADDR='172.17.0.1:8500'
+
 # Editor use vim
-VIM_PATH=/usr/local/Cellar/vim/8.1.2200/bin
+VIM_PATH=/usr/local/bin
 alias vi=${VIM_PATH}/vi
 alias vim=${VIM_PATH}/vim
 alias vimdiff=${VIM_PATH}/vimdiff
 alias view=${VIM_PATH}/view
-alias mvim=/usr/local/Cellar/macvim/8.1-157/bin/mvim
+#alias mvim=/usr/local/Cellar/macvim/8.2-165_1/bin/mvim
+
+export PATH=$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/npm/bin:/usr/local/opt/ruby/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:/Users/samlin/ops/.tools:$M2_HOME/bin:/usr/local/go/bin/:/usr/local/opt/openssl@1.1/bin:/usr/local/opt/kubectl/bin:/usr/local/opt/libpq/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin
 
 # bash use vim mode key binding
 set -o vi
@@ -39,9 +45,16 @@ export VISUAL=vim
 
 #Add Path and Git Branch or Mercurial Bookmark to prompt
 source ~/scm-prompt.bash
-export PS1='\u@\H:\w $(_dotfiles_scm_info)\$ '
-export PGHOST=localhost
-export PGPORT=5432
+# export PS1='\u@\H:\w $(_dotfiles_scm_info)\$ '
+# shorten prompt by hiding user, host name
+export PS1='\w $(_dotfiles_scm_info)\$ '
+
+# Convoy secrets
+# Aiven
+export AWS_SECRET_ACCESS_KEY=$(awk '/aws_secret_access_key/ {print $3}' ~/.aws/credentials)
+export AWS_ACCESS_KEY_ID=$(awk '/aws_access_key_id/ {print $3}' ~/.aws/credentials)
+
+source .bash_creds.sh
 
 # general
 alias py="python3"
@@ -87,12 +100,17 @@ alias tagcpp='rm TAGS; find . -name "*.c" -o -name "*.cpp" -o -name "*.h" -o -na
 # create cscope index
 alias csgen='find . -type f -name "*.php" -o -name "*.phpt" -o -name "*.c" -o -name "*.cpp" -o -name "*.h" -o -name "*.hpp" -o -name "*.c++" -o -name "*.py" -o -name "*.pl" -o -name "*.pm" -o -name "*.java" -o -name "*.thrift" > cscope.files; rm cscope.in.out cscope.out cscope.po.out ; cscope -bq'
 
+# curl
+alias curlGetVault='curl -X GET -H "X-Vault-Token: ${VAULT_TOKEN}" $VAULT_ADDR$1'
+
 #source $ADMIN_SCRIPTS/scm-prompt
 
 HISTSIZE=130000 HISTFILESIZE=-1
 #set ctrl + w to delete by word
-bind "^W":backward-delete-word
+#bind "^W":backward-delete-word
 #Cycle through commands to a partial match
-bind '"\e[A"':history-search-backward
-bind '"\e[B"':history-search-forward
+#bind '"\e[A"':history-search-backward
+#bind '"\e[B"':history-search-forward
+
+#test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
