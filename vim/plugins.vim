@@ -16,6 +16,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
 " file management
 Plugin 'scrooloose/nerdtree'
+" Showing git status for nerdtree
 " status bar
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
@@ -35,6 +36,17 @@ Plugin 'christoomey/vim-tmux-navigator'
 " Install L9 and avoid a Naming conflict if you've already installed a
 " different version somewhere else.
 " Plugin 'ascenator/L9', {'name': 'newL9'}
+
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'preservim/tagbar'
+"Plugin 'prettier/vim-prettier'
+
+" ack search tool 
+Plugin 'mileszs/ack.vim'
+
+" buffer delete without chaning window layout
+Plugin 'qpkorr/vim-bufkill'
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
