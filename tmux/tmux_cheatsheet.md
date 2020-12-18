@@ -167,3 +167,7 @@ Install plugin by:
 ## Save and Restore environments like window, panel 
 Save: <prefix> + <ctrl> + s
 Restore: <prefix> + <ctrl> + r
+
+
+## More cheatsheet
+https://gist.github.com/MohamedAlaa/2961058
