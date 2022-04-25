@@ -1,4 +1,5 @@
 # dotfiles
+
 Steps to set up:
 1.Install zsh instruciton
 https://medium.com/ayuth/iterm2-zsh-oh-my-zsh-the-most-power-full-of-terminal-on-macos-bdb2823fb04c
@@ -15,6 +16,14 @@ https://github.com/VundleVim/Vundle.vim#quick-start
 5.Config Iterm2
 - integrate with Tmux
 - font, color, style, etc
+
+6.Install homebrew
+
+7.Install & config git
+- brew git
+- brew git-lfs
+- ~/.gitconfig
+
 
 ## ctags
 Use ctags in Vim: https://andrew.stwrt.ca/posts/vim-ctags/
