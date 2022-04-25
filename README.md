@@ -17,6 +17,7 @@ https://github.com/VundleVim/Vundle.vim#quick-start
 5.Install Tmux
 - brew install tmux
 - ~/.tmux.conf
+- install Tmux Plugin Manager(TPM) https://arcolinux.com/everything-you-need-to-know-about-tmux-plugins-manager/
 
 6.Config Iterm2
 - integrate with Tmux
