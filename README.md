@@ -1,6 +1,7 @@
 # dotfiles
 
 Steps to set up:
+
 1.Install zsh instruciton
 https://medium.com/ayuth/iterm2-zsh-oh-my-zsh-the-most-power-full-of-terminal-on-macos-bdb2823fb04c
 
@@ -11,13 +12,15 @@ https://medium.com/ayuth/iterm2-zsh-oh-my-zsh-the-most-power-full-of-terminal-on
 3.Install Vim Vundle
 https://github.com/VundleVim/Vundle.vim#quick-start
 
-4.Install Tmux
+4.Install homebrew
 
-5.Config Iterm2
+5.Install Tmux
+- brew install tmux
+- ~/.tmux.conf
+
+6.Config Iterm2
 - integrate with Tmux
 - font, color, style, etc
-
-6.Install homebrew
 
 7.Install & config git
 - brew git
