@@ -5,29 +5,31 @@ Steps to set up:
 1.Install zsh instruciton
 https://medium.com/ayuth/iterm2-zsh-oh-my-zsh-the-most-power-full-of-terminal-on-macos-bdb2823fb04c
 
-2.Config Vim
+2.Install homebrew
+
+3.Install Vim
 - .vimrc
 - ~/.vim/plugins.vim
+- Install Vim Vundle
+  https://github.com/VundleVim/Vundle.vim#quick-start
+- brew install macvim
 
-3.Install Vim Vundle
-https://github.com/VundleVim/Vundle.vim#quick-start
-
-4.Install homebrew
-
-5.Install Tmux
+4.Install Tmux
 - brew install tmux
 - ~/.tmux.conf
 - install Tmux Plugin Manager(TPM) https://arcolinux.com/everything-you-need-to-know-about-tmux-plugins-manager/
 
-6.Config Iterm2
+5.Config Iterm2
 - integrate with Tmux
 - font, color, style, etc
 
-7.Install & config git
+6.Install & config git
 - brew git
 - brew git-lfs
 - ~/.gitconfig
 
+7.brew install dev tool
+- aws, gcp
 
 ## ctags
 Use ctags in Vim: https://andrew.stwrt.ca/posts/vim-ctags/
