@@ -31,6 +31,10 @@ https://medium.com/ayuth/iterm2-zsh-oh-my-zsh-the-most-power-full-of-terminal-on
 7.brew install dev tool
 - aws, gcp
 
+## Code search tool
+AG. The silver searcher - ACK/Grep like tool
+https://github.com/ggreer/the_silver_searcher#installing
+
 ## ctags
 Use ctags in Vim: https://andrew.stwrt.ca/posts/vim-ctags/
 
