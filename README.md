@@ -31,6 +31,16 @@ https://medium.com/ayuth/iterm2-zsh-oh-my-zsh-the-most-power-full-of-terminal-on
 7.brew install dev tool
 - aws, gcp
 
+## Language pkg
+1. Java
+- brew install --cask adoptopenjdk8
+2. Maven
+- brew install maven
+- By default, local repo location is ~/.m2/repository
+- global settings at {M2_HOME}/conf/settings.xml
+4. Gradle
+-  global/user settings at ~/.gradle/gradle.properties
+
 ## Code search tool
 AG. The silver searcher - ACK/Grep like tool
 https://github.com/ggreer/the_silver_searcher#installing
