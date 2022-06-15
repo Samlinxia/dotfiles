@@ -34,8 +34,9 @@ Steps to set up:
 - ~/.gitconfig
 - zsh git plugin provides many useful features [here](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git)
 
-8.brew install various handy dev tool
+8.brew install various handy dev tool, zsh plugins, tips and useful commands
 - aws, gcp, jq(json parser)
+- Follow https://towardsdatascience.com/the-ultimate-guide-to-your-terminal-makeover-e11f9b87ac99#4abb
 
 ## Language pkg
 1. Java
