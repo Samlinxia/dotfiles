@@ -2,7 +2,8 @@
 
 Steps to set up:
 1. Install brew
-2.Install zsh instruciton
+
+3.Install zsh instruciton
 https://medium.com/ayuth/iterm2-zsh-oh-my-zsh-the-most-power-full-of-terminal-on-macos-bdb2823fb04c
 - oh-my-zsh.
   - CMD cheatsheet: https://github.com/ohmyzsh/ohmyzsh/wiki/Cheatsheet
