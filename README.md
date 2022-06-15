@@ -1,35 +1,41 @@
 # dotfiles
 
 Steps to set up:
-
-1.Install zsh instruciton
+1. Install brew
+2.Install zsh instruciton
 https://medium.com/ayuth/iterm2-zsh-oh-my-zsh-the-most-power-full-of-terminal-on-macos-bdb2823fb04c
+- oh-my-zsh.
+  - CMD cheatsheet: https://github.com/ohmyzsh/ohmyzsh/wiki/Cheatsheet
+- Install font and zsh theme Powerlevel. Default font cannot recognize many symbols. [here](https://github.com/romkatv/powerlevel10k#getting-started)
+  - run `exec zsh` to apply the change of .zshrc. Enter into Wizard to customize your theme.
+- 
 
-2.Install homebrew
+3.Install homebrew
 
-3.Install Vim
+4.Install Vim
 - .vimrc
 - ~/.vim/plugins.vim
 - Install Vim Vundle
   https://github.com/VundleVim/Vundle.vim#quick-start
 - brew install macvim
 
-4.Install Tmux
+5.Install Tmux
 - brew install tmux
 - ~/.tmux.conf
 - install Tmux Plugin Manager(TPM) https://arcolinux.com/everything-you-need-to-know-about-tmux-plugins-manager/
 
-5.Config Iterm2
+6.Config Iterm2
 - integrate with Tmux
 - font, color, style, etc
 
-6.Install & config git
+7.Install & config git
 - brew git
 - brew git-lfs
 - ~/.gitconfig
+- zsh git plugin provides many useful features [here](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git)
 
-7.brew install dev tool
-- aws, gcp
+8.brew install various handy dev tool
+- aws, gcp, jq(json parser)
 
 ## Language pkg
 1. Java
@@ -38,8 +44,9 @@ https://medium.com/ayuth/iterm2-zsh-oh-my-zsh-the-most-power-full-of-terminal-on
 - brew install maven
 - By default, local repo location is ~/.m2/repository
 - global settings at {M2_HOME}/conf/settings.xml
-4. Gradle
+3. Gradle
 -  global/user settings at ~/.gradle/gradle.properties
+4. Python3, pip3
 
 ## Code search tool
 AG. The silver searcher - ACK/Grep like tool
