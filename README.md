@@ -3,17 +3,21 @@
 Steps to set up:
 
 1.Install brew
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
 - brew tap Homebrew/Bundle # install homebrew bundle
 - copy common.Brewfile to ~
 - brew bundle # install brew formulas & casks in Brewfile
 
-2.Install zsh [instruciton](https://medium.com/ayuth/iterm2-zsh-oh-my-zsh-the-most-power-full-of-terminal-on-macos-bdb2823fb04c)
+2. Install bash
+- Copy .bash_profile, .bash_creds to ~
+
+3.Install zsh [instruciton](https://medium.com/ayuth/iterm2-zsh-oh-my-zsh-the-most-power-full-of-terminal-on-macos-bdb2823fb04c)
 - oh-my-zsh.
   - CMD cheatsheet: https://github.com/ohmyzsh/ohmyzsh/wiki/Cheatsheet
 - Install font and zsh theme Powerlevel. Default font cannot recognize many symbols. [here](https://github.com/romkatv/powerlevel10k#getting-started)
   - run `exec zsh` to apply the change of .zshrc. Enter into Wizard to customize your theme.
-
-3.Install homebrew
 
 4.Install Vim
 - .vimrc
