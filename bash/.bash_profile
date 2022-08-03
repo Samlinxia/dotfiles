@@ -40,7 +40,7 @@ alias vimdiff=${VIM_PATH}/vimdiff
 alias view=${VIM_PATH}/view
 #alias mvim=/usr/local/Cellar/macvim/8.2-165_1/bin/mvim
 
-export PATH=$PATH:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/npm/bin:/usr/local/opt/ruby/bin:/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin:/Applications/Docker.app:/Applications/Postgres.app/Contents/Versions/latest/bin:/Users/samlin/ops/.tools:/usr/local/go/bin/:/usr/local/opt/openssl@1.1/bin:/usr/local/opt/kubectl/bin:/usr/local/opt/libpq/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin
+export PATH=$PATH:$(brew --prefix)/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/npm/bin:/usr/local/opt/ruby/bin:/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin:/Applications/Docker.app:/Applications/Postgres.app/Contents/Versions/latest/bin:/Users/samlin/ops/.tools:/usr/local/go/bin/:/usr/local/opt/openssl@1.1/bin:/usr/local/opt/kubectl/bin:/usr/local/opt/libpq/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin
 
 # bash use vim mode key binding
 set -o vi
@@ -101,8 +101,8 @@ alias tf='terraform'
 
 # k8s
 alias k='kubectl'
-source <(kubectl completion zsh)
-complete -F __start_kubectl k
+#source <(kubectl completion zsh)
+#complete -F __start_kubectl k
 
 # gcloud
 alias gc='gcloud'
