@@ -32,4 +32,5 @@ brew "elinks"
 
 # Casks
 
+# Follow: https://github.com/AdoptOpenJDK/homebrew-openjdk
 cask "adoptopenjdk8"
