@@ -8,7 +8,6 @@ brew "tmux"
 
 # Dev
 ## java
-cask adoptopenjdk8
 brew "maven"
 brew "gradle"
 ## code search
@@ -30,3 +29,7 @@ brew "tree"
 
 # browser
 brew "elinks"
+
+# Casks
+
+cask "adoptopenjdk8"
