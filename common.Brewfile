@@ -8,6 +8,8 @@ brew "tmux"
 
 # Dev
 ## java
+# Follow: https://github.com/AdoptOpenJDK/homebrew-openjdk
+cask "adoptopenjdk/openjdk/adoptopenjdk8"
 brew "maven"
 brew "gradle"
 ## code search
@@ -32,5 +34,5 @@ brew "elinks"
 
 # Casks
 
-# Follow: https://github.com/AdoptOpenJDK/homebrew-openjdk
-cask "adoptopenjdk8"
+## Productivity tools
+cask "hammerspoon"
