@@ -8,7 +8,7 @@ Steps to set up:
 ```
 - brew tap Homebrew/Bundle # install homebrew bundle
 - copy common.Brewfile to ~
-- brew bundle # install brew formulas & casks in Brewfile
+- brew bundle --file="~/common.Brewfile" # install brew formulas & casks in Brewfile
 
 2. Install bash
 - Copy .bash_profile, .bash_creds to ~
