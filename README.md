@@ -14,14 +14,19 @@ Steps to set up:
 - Copy .bash_profile, .bash_creds to ~
 
 3.Install zsh [instruciton](https://medium.com/ayuth/iterm2-zsh-oh-my-zsh-the-most-power-full-of-terminal-on-macos-bdb2823fb04c)
-- oh-my-zsh.
+  - oh-my-zsh.
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-omz update # use 'omz reload' instead of 'source .zshrc'
+omz update
+```
+  - powerlevel10k zsh theme
+```
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 ```
   - CMD cheatsheet: https://github.com/ohmyzsh/ohmyzsh/wiki/Cheatsheet
 - Install font and zsh theme Powerlevel. Default font cannot recognize many symbols. [here](https://github.com/romkatv/powerlevel10k#getting-started)
-  - run `exec zsh` to apply the change of .zshrc. Enter into Wizard to customize your theme.
+  - run `exec zsh` or 'omz reload' to apply the change of .zshrc. Enter into Wizard to customize your theme. 
+  - use `omz reload` instead of 'source .zshrc'
 
 4.Install Vim
 - .vimrc
