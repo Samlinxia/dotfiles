@@ -10,7 +10,7 @@ Steps to set up:
 - copy common.Brewfile to ~
 - brew bundle --file="~/common.Brewfile" # install brew formulas & casks in Brewfile
 
-2. Install bash
+2.Config bash
 - Copy .bash_profile, .bash_creds to ~
 
 3.Install zsh [instruciton](https://medium.com/ayuth/iterm2-zsh-oh-my-zsh-the-most-power-full-of-terminal-on-macos-bdb2823fb04c)
