@@ -57,7 +57,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 - Mac global search spotlight alternatives
   
 10.Chrome extension
-- Google Drive Save, Google Keep(image), pocket, Toby, Evernote, OneTab; translation, short url, Pomodoro, Grammarly, Glean
+- Google Drive Save, Google Keep(image), pocket, Toby, Evernote, OneTab; translation, short url, Marinara Pomodoro, Grammarly, Glean
 - Git related. SourceGraph, Gif for Github, Ginger, OctoTree
 - Theme: Momentum
 
