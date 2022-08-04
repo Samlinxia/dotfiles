@@ -35,4 +35,6 @@ brew "elinks"
 # Casks
 
 ## Productivity tools
+# Follow https://github.com/peterklijn/hammerspoon-shiftit
 cask "hammerspoon"
+cask "alfred"
