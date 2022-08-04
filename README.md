@@ -41,22 +41,22 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 - ~/.tmux.conf
 - install Tmux Plugin Manager(TPM) https://arcolinux.com/everything-you-need-to-know-about-tmux-plugins-manager/
 
-6. Iterm2
+6.Iterm2
 - integrate with Tmux
 - font, color, style, etc
 
-7. git
+7.git
 - ~/.gitconfig
 - zsh git plugin provides many useful features [here](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git)
 
-8. Productivity tools & Theme
+8.Productivity tools & Theme
 - Follow https://towardsdatascience.com/the-ultimate-guide-to-your-terminal-makeover-e11f9b87ac99#4abb
 
-9. Mac App - already installed via BrewBundle
+9.Mac App - already installed via BrewBundle
 - [shiftit](https://github.com/peterklijn/hammerspoon-shiftit)
 - Mac global search spotlight alternatives
   
-10. Chrome extension
+10.Chrome extension
 - Google Drive Save, Google Keep(image), pocket, Toby, Evernote, OneTab; translation, short url, Pomodoro, Grammarly, Glean
 - Git related. SourceGraph, Gif for Github, Ginger, OctoTree
 - Theme: Momentum
