@@ -58,7 +58,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
   
 10.Chrome extension
 - Google Drive Save, Google Keep(image), pocket, Toby, Evernote, OneTab; translation, short url, Marinara Pomodoro, Grammarly, Glean
-- Git related. SourceGraph, Gif for Github, Ginger, OctoTree
+- Git related. SourceGraph, Gif for Github, Ginger, OctoTree, Better Pull Request
 - Theme: Momentum
 
 
@@ -85,3 +85,9 @@ For big repro, could set up CI/CD to build ctags in repro continuously. Local de
 A class outline viewer for file. It create a sidebar that display ctags-generated tags of the current file, ordered by scope.
 It is not a general-purpose tool for managing tags files. It only creates the tags it needs on-the-fly in-memory without creating any files.
 https://github.com/preservim/tagbar/wiki
+
+
+
+# shortcuts
+Github:
+cmd + k: navigation
