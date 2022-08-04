@@ -27,6 +27,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 - Install font and zsh theme Powerlevel. Default font cannot recognize many symbols. [here](https://github.com/romkatv/powerlevel10k#getting-started)
   - run `exec zsh` or 'omz reload' to apply the change of .zshrc. Enter into Wizard to customize your theme. 
   - use `omz reload` instead of 'source .zshrc'
+  - Zsh completion
 
 4.Install Vim
 - .vimrc
@@ -40,34 +41,35 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 - ~/.tmux.conf
 - install Tmux Plugin Manager(TPM) https://arcolinux.com/everything-you-need-to-know-about-tmux-plugins-manager/
 
-6.Config Iterm2
+6. Iterm2
 - integrate with Tmux
 - font, color, style, etc
 
-7.Install & config git
-- brew git
-- brew git-lfs
+7. git
 - ~/.gitconfig
 - zsh git plugin provides many useful features [here](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git)
 
-8.brew install various handy dev tool, zsh plugins, tips and useful commands
-- aws, gcp, jq(json parser)
+8. Productivity tools & Theme
 - Follow https://towardsdatascience.com/the-ultimate-guide-to-your-terminal-makeover-e11f9b87ac99#4abb
 
-## Language pkg
+9. Mac App
+- [shiftit](https://github.com/peterklijn/hammerspoon-shiftit)
+- Mac global search spotlight alternatives
+  
+10. Chrome extension
+- Google Drive Save, Google Keep(image), pocket, Toby, Evernote, OneTab; translation, short url, Pomodoro, Grammarly, Glean
+- Git related. SourceGraph, Gif for Github, Ginger, OctoTree
+- Theme: Momentum
+
+
+## dev env config
 1. Java
 - brew install --cask adoptopenjdk8
 2. Maven
-- brew install maven
 - By default, local repo location is ~/.m2/repository
 - global settings at {M2_HOME}/conf/settings.xml
 3. Gradle
 -  global/user settings at ~/.gradle/gradle.properties
-4. Python3, pip3
-
-## Code search tool
-AG. The silver searcher - ACK/Grep like tool
-https://github.com/ggreer/the_silver_searcher#installing
 
 ## ctags
 Use ctags in Vim: https://andrew.stwrt.ca/posts/vim-ctags/
