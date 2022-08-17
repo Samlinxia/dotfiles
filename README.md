@@ -53,8 +53,8 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 - Follow https://towardsdatascience.com/the-ultimate-guide-to-your-terminal-makeover-e11f9b87ac99#4abb
 
 9.Mac App - already installed via BrewBundle
-- [shiftit](https://github.com/peterklijn/hammerspoon-shiftit)
-- Mac global search spotlight alternatives
+- [hammerspoon-shiftit](https://github.com/peterklijn/hammerspoon-shiftit)
+- Alfred.  A global search spotlight alternatives on MacOS
   
 10.Chrome extension
 - Google Drive Save, Google Keep(image), pocket, Toby, Evernote, OneTab; translation, short url, Marinara Pomodoro, Grammarly, Glean
