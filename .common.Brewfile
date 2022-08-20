@@ -38,3 +38,4 @@ brew "elinks"
 # Follow https://github.com/peterklijn/hammerspoon-shiftit
 cask "hammerspoon"
 cask "alfred"
+cask "git-credential-manager-core"
