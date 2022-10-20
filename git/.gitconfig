@@ -3,8 +3,8 @@
 [url "https://github.com/"]
 	insteadOf = ssh://git@github.com/
 [user]
-	name = Sam Lin
-	email = xiaxunlin@gmail.com
+	name = <name>
+	email = <email>
 [alias]
   co = checkout
 	st = status
@@ -44,4 +44,5 @@
 	extendedRegexp = true
 [push]
 	default = current
+	autoSetupRemote = true
 
