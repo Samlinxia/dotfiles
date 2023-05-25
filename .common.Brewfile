@@ -20,6 +20,7 @@ brew "terraform"
 brew "kubectl"
 brew "minikube"
 brew "helm"
+brew "derailed/k9s/k9s"
 
 # admin tools
 brew "htop"
