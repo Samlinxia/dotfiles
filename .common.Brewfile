@@ -21,6 +21,8 @@ brew "kubectl"
 brew "minikube"
 brew "helm"
 brew "derailed/k9s/k9s"
+brew "skaffold"
+brew "grpcurl"
 
 # admin tools
 brew "htop"
