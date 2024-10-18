@@ -7,9 +7,11 @@ brew "python" # pip comes with python3.4 and after
 brew "tmux"
 
 # Dev
-## java
-# Follow: https://github.com/AdoptOpenJDK/homebrew-openjdk
-cask "adoptopenjdk/openjdk/adoptopenjdk8"
+## install ARM64 Java 8,11,17 on Apple MacOS
+cask "zulu@17"
+cask "zulu@11"
+cask "zulu@8"
+
 brew "maven"
 brew "gradle"
 ## code search
@@ -36,6 +38,7 @@ brew "tree"
 brew "elinks"
 
 # Casks
+
 
 ## Productivity tools
 # Follow https://github.com/peterklijn/hammerspoon-shiftit
